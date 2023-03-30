@@ -11,7 +11,7 @@
             Options = options;
             RightAnswer = rightAnswer;
         }
-        public void RunQuiz()
+        public int RunQuestion()
         {
             Console.WriteLine(QuestionText);
             for (int i = 0; i < Options.Length; i++)
@@ -24,8 +24,13 @@
             var answer = Console.ReadLine();
             if (answer[0] == RightAnswer)
             {
-
+                Console.WriteLine("Svaret er riktig.");
+                return 1;
             }
+
+            Console.WriteLine("Svaret er feil!");
+            return 0;
+
         }
 
     }
