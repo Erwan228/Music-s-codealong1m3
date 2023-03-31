@@ -21,6 +21,7 @@ namespace CodeAlong
             Console.ForegroundColor = ConsoleColor.DarkRed;
             points += Question4.RunQuestion();
             Console.WriteLine(points + " Poeng");
+            Console.BackgroundColor = ConsoleColor.DarkRed;
 
 
 
