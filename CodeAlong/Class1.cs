@@ -18,17 +18,19 @@
             {
                 var letter = (Char)('A' + i);
                 string? question = Options[i];
-                Console.WriteLine(question);
+                Console.WriteLine(letter + ": " + question);
             }
-            Console.Write("Skriv inn a, b eller c: ");
+            Console.Write("Skriv inn svaret ditt: ");
             var answer = Console.ReadLine();
             if (answer[0] == RightAnswer)
             {
                 Console.WriteLine("Svaret er riktig.");
+                Console.WriteLine();
                 return 1;
             }
 
             Console.WriteLine("Svaret er feil!");
+            Console.WriteLine();
             return 0;
 
         }
