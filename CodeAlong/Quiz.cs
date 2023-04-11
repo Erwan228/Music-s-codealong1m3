@@ -4,7 +4,7 @@ namespace CodeAlong
 {
     public class Quiz
     {
-        public void RunQuiz()
+        public int RunQuiz()
         {
             string[] optionsArray = { "En karakter fra en visuell skrekkroman", "En Arkitekt", "En guvernør i Elysium" };
             var Question1 = new Question("Hvem er Samuel Ayers", optionsArray, 'a');
@@ -20,9 +20,8 @@ namespace CodeAlong
             points += Question3.RunQuestion();
             Console.ForegroundColor = ConsoleColor.DarkRed;
             points += Question4.RunQuestion();
-            Console.WriteLine(points + " Poeng");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            return points;
+
         }
     }
 }

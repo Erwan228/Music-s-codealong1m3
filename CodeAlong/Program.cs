@@ -5,7 +5,10 @@
         static void Main(string[] args)
         {
             var Quiz1 = new Quiz();
-            Quiz1.RunQuiz();
+            int points = Quiz1.RunQuiz();
+            Console.WriteLine(points + " Poeng");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
 
 
 
