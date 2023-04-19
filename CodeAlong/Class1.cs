@@ -5,10 +5,10 @@
         public string QuestionText { get; private set; }
         public string[] Options { get; private set; }
         public char RightAnswer { get; private set; }
-        public Question(string questionText, string[] options, char rightAnswer)
+        public Question(string questionText, char rightAnswer, params string[] answerOptions)
         {
             QuestionText = questionText;
-            Options = options;
+            Options = answerOptions;
             RightAnswer = rightAnswer;
         }
         public int RunQuestion()
