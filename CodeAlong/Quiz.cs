@@ -15,6 +15,14 @@ namespace CodeAlong
             questions.Add(Question3);
             var Question4 = new Question("Hvem drukna Sydney", 'b', "Drukna av seg selv", "Chase", "Flynn", "Jenna", "Tobias", "Carl", "Leo");
             questions.Add(Question4);
+            var Question5 = new Question("Hvem hadde skylda i forsvinnelsen av mesetabarna", 'a', "James Hendricks", "John Begay");
+            questions.Add(Question5);
+            var Question6 = new Question("Hvem manifesterte en tulpa", 'f', "Chase", "Flynn", "Jenna", "Tobias", "Carl", "Leo");
+            questions.Add(Question6);
+            var Question7 = new Question("Hvilken primal av disse blir ikke tilkalt av Summoner", 'd', "Ifrit", "Titan", "Garuda", "Shiva", "Bahamut", "Phoenix");
+            questions.Add(Question7);
+            var Question8 = new Question("Hvilken extension får duty support i patch 6.4?", 'c', "A REAL REBORN", "HEAVENSWARD", "STORMBLOOD", "SHADOWBRINGERS", "ENDWALKER");
+            questions.Add(Question8);
         }
         public int RunQuiz()
         {
